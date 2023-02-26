@@ -15,23 +15,3 @@ export const fetchBooks = () => {
     .then(books => books)
     .catch(error => console.log(error));
 }
-
-export const getBooksOrMovies = () => {
-  return promise.all([fetchBooks(), fetchMovies()])
-    .then(results => {
-      books,
-        movies
-    })
-  .catch(error => console.log("Error fetching books and movies",error))
-}
-
-const getBooksOrMoviesPromise = getBooksOrMovies()
-
-getBooksAndMoviesPromise.then(results => {
-  console.log('getBooksOrMoviesPromise',results)
-})
-
-
-
-
-
