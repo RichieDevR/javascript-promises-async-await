@@ -16,7 +16,7 @@ export const fetchBooks = () => {
     .catch(error => console.log(error));
 }
 
-export const asyncFetchMovies = async () =>{
+export async function asyncFetchMovies (){
   try {
     const response = await fetch("/data/movies.json");
     const results = await response.json();
